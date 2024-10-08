@@ -1,4 +1,5 @@
 # Variables In C language
+
 Variables are the name of a memory location which stores some data.
 
 | Value | Description                                          |
@@ -168,3 +169,4 @@ A computer program that translates C code into machine code.
 ```plaintext
 hello.c ---> C compiler ---> a.exe (Windows) / a.out (Mac and Linux)
 ```
+
