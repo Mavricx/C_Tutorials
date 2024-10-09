@@ -1,4 +1,5 @@
 ## Chapter 2: Instructions
+
 These are statements in a program:
 
 1. Type declaration instructions
@@ -167,4 +168,104 @@ int x = 4 * 3 / 6 * 2;
 x = 12 / 6 * 2;
 x = 2 * 2;
 x = 4;
+```
+
+### Control Instructions
+
+Control instructions are used to determine the flow of the program:
+
+1. Sequence control
+2. Decision control
+3. Loop control
+4. Case control
+
+### Operators
+
+1. Arithmetic operators
+2. Relational operators
+3. Logical operators
+4. Bitwise operators
+5. Assignment operators
+6. Ternary operators
+
+### Relational Operators
+
+Returns `0` for false and `1` for true.
+
+1. `==` → is equal to
+2. `!=` → is not equal to
+
+3. `>` , `>=` → greater than and greater than or equal to
+4. `<` , `<=` → smaller than and smaller than or equal to
+
+Example:
+
+````c
+printf("%d", 4 == 4); // returns 1, which means true as boolean doesn't exist in C language
+### Logical Operators
+
+Logical operators are used to perform logical operations and return either `0` (false) or `1` (true).
+
+1. `&&` → AND operator
+2. `||` → OR operator
+3. `!` → NOT operator
+
+Example:
+
+```c
+
+int a = 1, b = 0;
+
+printf("%d\n", a && b); // returns 0 (false) because both operands are not true
+printf("%d\n", a || b); // returns 1 (true) because at least one operand is true
+printf("%d\n", !a);     // returns 0 (false) because a is true (non-zero)
+printf("%d\n", !b);     // returns 1 (true) because b is false (zero)
+
+````
+
+### Operator Precedence
+
+The precedence of operators determines the order in which operations are performed in an expression. Here is a simplified precedence order:
+
+```
+! >> *, /, % >> +, - >> <, <=, >, >= >> ==, != >> && >> || >> =
+```
+
+This means that the logical NOT (`!`) operator has the highest precedence, followed by multiplication (`*`), division (`/`), and modulus (`%`), and so on. The assignment operator (`=`) has the lowest precedence.
+
+When operators have the same precedence, their associativity determines the order of evaluation. Most operators have left-to-right associativity, meaning they are evaluated from left to right.
+
+For example:
+
+```c
+int a = 5, b = 10, c = 15;
+int result;
+
+result = a + b * c; // Multiplication (*) has higher precedence than addition (+)
+printf("%d\n", result); // Output: 155
+
+result = (a + b) * c; // Parentheses () override the default precedence
+printf("%d\n", result); // Output: 225
+```
+
+### Assignment Operators
+
+Assignment operators are used to assign values to variables. Here are the common assignment operators in C:
+
+- `=` : Assigns the value on the right to the variable on the left.
+- `+=` : Adds the value on the right to the variable on the left and assigns the result to the variable on the left.
+- `-=` : Subtracts the value on the right from the variable on the left and assigns the result to the variable on the left.
+- `*=` : Multiplies the variable on the left by the value on the right and assigns the result to the variable on the left.
+- `/=` : Divides the variable on the left by the value on the right and assigns the result to the variable on the left.
+- `%=` : Takes the modulus of the variable on the left by the value on the right and assigns the result to the variable on the left.
+
+Example:
+
+```c
+int a = 10;
+a += 5;  // a = a + 5;  a is now 15
+a -= 3;  // a = a - 3;  a is now 12
+a *= 2;  // a = a * 2;  a is now 24
+a /= 4;  // a = a / 4;  a is now 6
+a %= 3;  // a = a % 3;  a is now 0
 ```

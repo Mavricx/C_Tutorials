@@ -9,6 +9,9 @@ int main()
     // printf("Remainder is %d", 4 % 3);
     // printf("%f\n", 3.0 / 2);
     // printf("%d\n", 3 / 2);
-    int a = (int)1.99999;
-    printf("a = %d\n", a); // a=1
+    // int a = (int)1.99999;
+    // printf("a = %d\n", a); // a=1
+    printf("%d\n", 4 == 4); // returns 1 as true
+    printf("%d\n", 3 < 4 && 5 > 2);
+    printf("%d\n", 3 > 4 || 5 > 2);
 }
